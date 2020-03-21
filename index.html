@@ -28,8 +28,10 @@
                 <li>Add to Staging Level.</li>
                 <li>Commit files.</li>
                 <li>Check Folder names (local's and Github's).</li>
-                <li>Check current Repo urls (local's and Github's).</li>
-                <li>Make sure they are matched.</li>
+                <li>Check current Repo remote urls (local's and Github's).</li>
+                <li>If No such remote url.</li>
+                <li>Add remote url.</li>
+                <li>Make sure url path is correct.</li>
                 <li>Push to GitHub.</li>
             </ol>
 
@@ -183,7 +185,10 @@
                             <td></td>
                             <td>
                                 Change repo server address <br />
-                                <em>* Get target HTTPS on GitHub first.</em>
+                                <em
+                                    >*For clones.<br />
+                                    * Get target HTTPS link on GitHub first.</em
+                                >
                             </td>
                             <td>
                                 git remote set-url origin targetUrl <br />
@@ -192,6 +197,18 @@
                                 git remote set-url origin
                                 https://github.com/LearnWebCode/travel-site.git
                             </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                Add remote url <br />
+                                <em
+                                    >*Must navigate to repo folder. <br />
+                                    *Go to GitHub. Create a new repo.<br />
+                                    *Copy HTTP link</em
+                                >
+                            </td>
+                            <td>git remote add origin https://...</td>
                         </tr>
 
                         <!-- Push -->
