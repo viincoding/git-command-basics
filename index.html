@@ -14,104 +14,205 @@
                 letter-spacing: 1px;
             }
         </style>
-        <title>Git Commands</title>
+        <title>Git Commands Basics</title>
     </head>
     <body>
-        <h1>Git Commands (Basics)</h1>
+        <div class="container">
+            <h1 class="py-5">Git Commands (Basics)</h1>
 
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th scope="col">Relate To</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Git Command</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Directories -->
-                <tr>
-                    <td>Directories / Move Around Folders</td>
-                    <td>Print Current Directory</td>
-                    <td>pwd + 'Enter' key</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Change Directory</td>
-                    <td>
-                        cd + "Drag the target folder into Terminal on the
-                        cursor"
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Change Directory to parent folder</td>
-                    <td>
-                        cd ..
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Make Directory / New Folder</td>
-                    <td>mkdir "folderName"</td>
-                </tr>
+            <h3>Push</h3>
+            <ol>
+                <li>In Terminal, check git status.</li>
+                <li>Add to Staging Level.</li>
+                <li>Commit files.</li>
+                <li>Check Folder names (local's and Github's).</li>
+                <li>Check current Repo urls (local's and Github's).</li>
+                <li>Make sure they are matched.</li>
+                <li>Push to GitHub.</li>
+            </ol>
 
-                <!-- Set Up Your Details -->
-                <tr>
-                    <td>Setup Your Details</td>
-                    <td>Set up your name globally</td>
-                    <td>git config --global user.name "YourName"</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Set up your email globally</td>
-                    <td>
-                        git config --global user.email "yourEmail@gmail.com"
-                    </td>
-                </tr>
+            <div class="py-5">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Relate To</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Git Command + hit "Enter"</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Directories -->
+                        <tr>
+                            <td>Directories / Move Around Folders</td>
+                            <td>Print Current Directory</td>
+                            <td>pwd</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Change Directory</td>
+                            <td>
+                                cd + "Drag the target folder into Terminal on
+                                the cursor"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Change Directory to parent folder</td>
+                            <td>
+                                cd ..
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Make Directory / New Folder</td>
+                            <td>mkdir "folderName"</td>
+                        </tr>
 
-                <!-- Git -->
-                <tr>
-                    <td>Git</td>
-                    <td>Current commit status</td>
-                    <td>git status</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Initialize git</td>
-                    <td>git init</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Revert to previous version / Undo</td>
-                    <td>
-                        git checkout -- .
-                    </td>
-                </tr>
+                        <!-- Set Up Your Details -->
+                        <tr>
+                            <td>Setup Your Details</td>
+                            <td>Set up your name globally</td>
+                            <td>git config --global user.name "YourName"</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Set up your email globally</td>
+                            <td>
+                                git config --global user.email
+                                "yourEmail@gmail.com"
+                            </td>
+                        </tr>
 
-                <!-- Files -->
-                <tr>
-                    <td>Files</td>
-                    <td>Create a new file</td>
-                    <td>touch "index.html"</td>
-                </tr>
+                        <!-- Git -->
+                        <tr>
+                            <td>Git</td>
+                            <td>Current commit status</td>
+                            <td>git status</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Initialize git</td>
+                            <td>git init</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Revert to previous version / Undo</td>
+                            <td>
+                                git checkout -- .
+                            </td>
+                        </tr>
 
-                <!-- Staging -->
-                <tr>
-                    <td>Staging</td>
-                    <td>Add to Stage</td>
-                    <td>git add "index.html"</td>
-                </tr>
+                        <!-- Files -->
+                        <tr>
+                            <td>Files</td>
+                            <td>Create a new file</td>
+                            <td>touch "index.html"</td>
+                        </tr>
 
-                <!-- Commit -->
-                <tr>
-                    <td>Commit</td>
-                    <td>Make a commit / Save changes</td>
-                    <td>
-                        git commit -m 'Add your description of changes here.'
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        <!-- Staging -->
+                        <tr>
+                            <td>Staging</td>
+                            <td>Add to Staging level</td>
+                            <td>git add "index.html"</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Add all updated files to Staging level</td>
+                            <td>git add -A</td>
+                        </tr>
+
+                        <!-- Commit -->
+                        <tr>
+                            <td>Commit</td>
+                            <td>Make a commit / Save changes</td>
+                            <td>
+                                git commit -m 'Add your description of changes
+                                here.'
+                                <br /><br />
+                                <em
+                                    >Example... <br />
+                                    git commit -m 'Changed font size to
+                                    25px.'</em
+                                >
+                            </td>
+                        </tr>
+
+                        <!-- Create a repo on GitHub -->
+                        <!-- Unchecked "initialize this repository with a README" for importing existing repo -->
+
+                        <!-- Clone an existing repo -->
+                        <!-- Navigate to target project folder in Terminal -->
+
+                        <!-- Clone repo -->
+                        <tr>
+                            <td>Clone</td>
+                            <td>
+                                Clone an existing repo. <br />
+                                <em
+                                    >* You may have to enter your username /
+                                    password / token.</em
+                                >
+                            </td>
+                            <td>
+                                git clone targetUrl <br /><br />
+                                <em>Example..</em> <br />
+                                git clone
+                                https://github.com/LearnWebCode/travel-site-file.git
+                            </td>
+                        </tr>
+
+                        <!-- Make sure computer repo name and GitHub repo name are match before push -->
+
+                        <!-- Current Repo Server Address -->
+                        <tr>
+                            <td>Server Address</td>
+                            <td>
+                                Check current repo server address <br />
+                                <em
+                                    >* Must Navigate to target directory /
+                                    folder first.</em
+                                >
+                            </td>
+                            <td>git remote -v</td>
+                        </tr>
+
+                        <!-- Change Repo Server Address -->
+                        <tr>
+                            <td></td>
+                            <td>
+                                Change repo server address <br />
+                                <em>* Get target HTTPS on GitHub first.</em>
+                            </td>
+                            <td>
+                                git remote set-url origin targetUrl <br />
+                                <br />
+                                <em>Example...</em><br />
+                                git remote set-url origin
+                                https://github.com/LearnWebCode/travel-site.git
+                            </td>
+                        </tr>
+
+                        <!-- Push -->
+                        <tr>
+                            <td>Push</td>
+                            <td>
+                                Push repo to GitHub <br />
+                                <em
+                                    >* Make sure the repo server is matched.
+                                    <br />
+                                    * You may have to enter your username /
+                                    password / token.</em
+                                >
+                            </td>
+                            <td>
+                                git push origin master <br />
+                                <em>* Reload GitHub page to check.</em>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
         <script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
